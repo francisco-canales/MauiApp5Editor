@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp5Editor.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                Source="dotnet_bot.png"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Propiedades del editor"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Editor
+                Placeholder="Escribe descripcion"
+                AutoSize="TextChanges"
+                MaxLength="200"
+                IsSpellCheckEnabled="True"
+                IsTextPredictionEnabled="True"
+                TextChanged="Editor_TextChanged"
+                Completed="Editor_Completed"
+                
+                
+                />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
